@@ -62,7 +62,7 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Redux</h5>
+                  <h5>Python</h5>
                 </div>
               </Carousel>
             </div>
