@@ -17,25 +17,25 @@ export const Projects = () => {
   const projects = [
     {
       title: "youtube ",
-      description: "Tool for Quick calculation",
+      description: "viedo sharing service where users can like and upload their own videos",
       imgUrl: youtube,
       linkUrl:"https://youtubeplaylist.ccbp.tech"
     },
     {
       title: "Flipkart",
-      description: "Make your TechLife Easy",
+      description: "Flipkart helps users for shoping purposes",
       imgUrl: flipkart,
       linkUrl:"https://flipkartpage.ccbp.tech"
     },
     {
       title: "zomato",
-      description: "zomato",
+      description: "zomato we can order food items from restaurants",
       imgUrl: zomato,
       linkUrl:"https://zomatopage.ccbp.tech"
     },
     {
-      title: "Guess the Number ",
-      description: "Number guessing game",
+      title: "amazon",
+      description: "amazon we can buy all types of products",
       imgUrl: amazon,
       linkUrl:"https://amazonpage.ccbp.tech",
     },
@@ -48,20 +48,20 @@ export const Projects = () => {
     },
    
     {
-      title: "Guess the Number ",
-      description: "Number guessing game",
+      title: "Google search",
+      description: "we can search whatever we want in google",
       imgUrl: google,
       linkUrl:"https://pagesearch.ccbp.tech"
     },
     {
-      title: "Guess the Number ",
-      description: "Number guessing game",
+      title: "Tourism places",
+      description: "we can can search tourist places",
       imgUrl: tourism,
       linkUrl:"https://vacationtour.ccbp.tech"
     },
     {
-      title: "Guess the Number ",
-      description: "Number guessing game",
+      title: "Booking Flats",
+      description: "booking the flats",
       imgUrl: flatbook,
       linkUrl:"https://snapdealbooking.ccbp.tech"
     }
