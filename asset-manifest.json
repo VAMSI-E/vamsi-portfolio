@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vamsi-portfolio/static/css/main.71a41e5c.css",
-    "main.js": "/vamsi-portfolio/static/js/main.f0ada302.js",
+    "main.js": "/vamsi-portfolio/static/js/main.6a8c5c68.js",
     "static/js/787.1ed0c42c.chunk.js": "/vamsi-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/color-sharp.png": "/vamsi-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/vamsi-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -26,16 +26,16 @@
     "static/media/meter2.svg": "/vamsi-portfolio/static/media/meter2.1b8f416eccd1ee162218b8528a1c5cdc.svg",
     "static/media/meter1.svg": "/vamsi-portfolio/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
     "static/media/meter3.svg": "/vamsi-portfolio/static/media/meter3.2201f7e4df22bc4b08180210474f28cc.svg",
-    "static/media/nav-icon2.svg": "/vamsi-portfolio/static/media/nav-icon2.22f8a9d5e357d011c695c4ae543de6d9.svg",
-    "static/media/nav-icon3.svg": "/vamsi-portfolio/static/media/nav-icon3.58119707848f7fb52225b5f52e153f91.svg",
+    "static/media/nav-icon3.svg": "/vamsi-portfolio/static/media/nav-icon3.22e4ae147563316927c6d13fe05d2122.svg",
     "index.html": "/vamsi-portfolio/index.html",
     "static/media/nav-icon1.svg": "/vamsi-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/nav-icon2.svg": "/vamsi-portfolio/static/media/nav-icon2.e31b92012aea8916745d9ffeaeb3c094.svg",
     "main.71a41e5c.css.map": "/vamsi-portfolio/static/css/main.71a41e5c.css.map",
-    "main.f0ada302.js.map": "/vamsi-portfolio/static/js/main.f0ada302.js.map",
+    "main.6a8c5c68.js.map": "/vamsi-portfolio/static/js/main.6a8c5c68.js.map",
     "787.1ed0c42c.chunk.js.map": "/vamsi-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71a41e5c.css",
-    "static/js/main.f0ada302.js"
+    "static/js/main.6a8c5c68.js"
   ]
 }
