@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/vamsi-portfolio/static/css/main.71a41e5c.css",
-    "main.js": "/vamsi-portfolio/static/js/main.c947d0f2.js",
+    "main.js": "/vamsi-portfolio/static/js/main.f0ada302.js",
     "static/js/787.1ed0c42c.chunk.js": "/vamsi-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/color-sharp.png": "/vamsi-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/vamsi-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
-    "static/media/zomato.png": "/vamsi-portfolio/static/media/zomato.46f6a82ba5a1e0310669.png",
+    "static/media/zomato.png": "/vamsi-portfolio/static/media/zomato.10905e17baf02cf56bdd.png",
     "static/media/flipkartpage.png": "/vamsi-portfolio/static/media/flipkartpage.37169e4bfe04dd7a34b9.png",
     "static/media/amazon.png": "/vamsi-portfolio/static/media/amazon.a5dfb1b6099b35eeef1a.png",
     "static/media/youtube.png": "/vamsi-portfolio/static/media/youtube.78f0e6451e489ba4a9df.png",
@@ -31,11 +31,11 @@
     "index.html": "/vamsi-portfolio/index.html",
     "static/media/nav-icon1.svg": "/vamsi-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.71a41e5c.css.map": "/vamsi-portfolio/static/css/main.71a41e5c.css.map",
-    "main.c947d0f2.js.map": "/vamsi-portfolio/static/js/main.c947d0f2.js.map",
+    "main.f0ada302.js.map": "/vamsi-portfolio/static/js/main.f0ada302.js.map",
     "787.1ed0c42c.chunk.js.map": "/vamsi-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71a41e5c.css",
-    "static/js/main.c947d0f2.js"
+    "static/js/main.f0ada302.js"
   ]
 }
