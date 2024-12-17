@@ -155,7 +155,7 @@ export const Projects = () => {
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
-
+   
                 <h2 style={{ marginBottom: '60px' }}>Hands-on projects</h2>
 
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">            
