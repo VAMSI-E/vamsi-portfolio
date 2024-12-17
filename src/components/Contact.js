@@ -27,10 +27,10 @@ export const Contact = () => {
                     
                 
                     <Row size={20} sm={6} className="px-1">
-                      <input type="email" value={"Email: vamsi0263@gmail.com"} placeholder="" disabled/>
+                      <input type="email" value={"Email: vamsikrishna344@gmail.com"} placeholder="" disabled/>
                     </Row>
                     <Row size={12} sm={6} className="px-1">
-                      <input type="tel" value={"Phone No: +91-9182351893"} placeholder="" disabled/>
+                      <input type="tel" value={"Phone No: +91-9108848655"} placeholder="" disabled/>
                     </Row>
                     <Row size={10} className="px-1">
                       <textarea rows="3" value={`If You are interested in my Profile.Please Feel free to contact me. See You Soon...` }  data-emojiable="true" disabled >hj</textarea>

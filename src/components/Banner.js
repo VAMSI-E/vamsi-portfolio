@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Frontend Developer" ];
+  const toRotate = ["Shopify Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -49,28 +49,30 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container style={{marginTop:"-70px"}}>
+      <Container style={{ marginTop: "-70px" }}>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Vamsi`}</h1> 
-                <h1 className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer"]' height=""><span className="wrap">{text}</span></h1>
-                  <p>I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Vamsi`}</h1>
+                  <h1 className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer"]' height=""><span className="wrap">{text}</span></h1>
+                  <p>I'm a very ambitious Shopify developer looking for a role in an
+                    established IT company with the opportunity to work with the latest
+                    technologies on challenging and diverse projects.I'm quiet confident, naturally curious, and perpetually working on
+                    improving my chops one design problem at a time.</p>
+                  <a href="/vamsi-portfolio#connect">
+                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </a>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>
