@@ -1,11 +1,18 @@
 {
   "files": {
-    "main.css": "/vamsi-portfolio/static/css/main.71a41e5c.css",
-    "main.js": "/vamsi-portfolio/static/js/main.6a8c5c68.js",
+    "main.css": "/vamsi-portfolio/static/css/main.bba41a2f.css",
+    "main.js": "/vamsi-portfolio/static/js/main.9e0c9739.js",
     "static/js/787.1ed0c42c.chunk.js": "/vamsi-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Trident.png": "/vamsi-portfolio/static/media/Trident.ea561bf5738c915093ad.png",
     "static/media/color-sharp.png": "/vamsi-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/mcaffine.png": "/vamsi-portfolio/static/media/mcaffine.afce4831e7fb4bf57894.png",
+    "static/media/slurrpfarm.png": "/vamsi-portfolio/static/media/slurrpfarm.22135f6665f11505bf7f.png",
     "static/media/color-sharp2.png": "/vamsi-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/Superkicks.png": "/vamsi-portfolio/static/media/Superkicks.957f6dbadd2048f6dd35.png",
+    "static/media/fabelstreet.png": "/vamsi-portfolio/static/media/fabelstreet.9945ec99ce34c7f4df5d.png",
+    "static/media/borosil.png": "/vamsi-portfolio/static/media/borosil.0a802fa2adfa33162f7b.png",
     "static/media/zomato.png": "/vamsi-portfolio/static/media/zomato.10905e17baf02cf56bdd.png",
+    "static/media/marchjewellery.png": "/vamsi-portfolio/static/media/marchjewellery.4e4eb0fb80176087b9b2.png",
     "static/media/flipkartpage.png": "/vamsi-portfolio/static/media/flipkartpage.37169e4bfe04dd7a34b9.png",
     "static/media/amazon.png": "/vamsi-portfolio/static/media/amazon.a5dfb1b6099b35eeef1a.png",
     "static/media/youtube.png": "/vamsi-portfolio/static/media/youtube.78f0e6451e489ba4a9df.png",
@@ -30,12 +37,12 @@
     "index.html": "/vamsi-portfolio/index.html",
     "static/media/nav-icon1.svg": "/vamsi-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/vamsi-portfolio/static/media/nav-icon2.e31b92012aea8916745d9ffeaeb3c094.svg",
-    "main.71a41e5c.css.map": "/vamsi-portfolio/static/css/main.71a41e5c.css.map",
-    "main.6a8c5c68.js.map": "/vamsi-portfolio/static/js/main.6a8c5c68.js.map",
+    "main.bba41a2f.css.map": "/vamsi-portfolio/static/css/main.bba41a2f.css.map",
+    "main.9e0c9739.js.map": "/vamsi-portfolio/static/js/main.9e0c9739.js.map",
     "787.1ed0c42c.chunk.js.map": "/vamsi-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71a41e5c.css",
-    "static/js/main.6a8c5c68.js"
+    "static/css/main.bba41a2f.css",
+    "static/js/main.9e0c9739.js"
   ]
 }
