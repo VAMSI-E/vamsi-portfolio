@@ -48,10 +48,16 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/-vamsi/"><img src={navIcon1} alt="" /></a>
                 <a href="mailto:vamsi0263@gmail.com"><img src={navIcon2} alt="mail" /></a>
-                <a href="tel:9182351893"><img src={navIcon3} alt="phone" /></a>
+                <a href="tel:9108848655"><img src={navIcon3} alt="phone" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Contact</span></button>
+                <button className="button-animation">
+                  Contact
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </HashLink>
             </span>
           </Navbar.Collapse>
