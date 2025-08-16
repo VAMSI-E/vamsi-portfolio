@@ -1,27 +1,40 @@
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import youtube from "../assets/img/youtube.png"
-import flipkart from"../assets/img/flipkartpage.png";
-import zomato from "../assets/img/zomato.png";
 import fablestreet from "../assets/img/fabelstreet.png";
 import slurfarm from "../assets/img/slurrpfarm.png";
 import trident from "../assets/img/Trident.png";
 import borosil from "../assets/img/borosil.png";
 import marchjewellery from "../assets/img/marchjewellery.png";
 import mcaffine from "../assets/img/mcaffine.png";
+import Animigo from "../assets/img/Animigo.png";
+import nashermiles from "../assets/img/Nashermiles.png";
+import weightworld from "../assets/img/weightworld.png";
 import superkicks from "../assets/img/Superkicks.png";
-import guessnumber from "../assets/img/gussnumber.png";
-import amazon from "../assets/img/amazon.png";
-import tourism from "../assets/img/tourism.png";
-import google from "../assets/img/googlesearch.png";
-import flatbook from "../assets/img/floatbook.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const Shopifyprojects = [
+    {
+      title: "Nashermiles",
+      description: "Nashermiles offers quality-tested lifestyle products with free pan-India shipping and hassle-free returns.",
+      imgUrl: nashermiles,
+      linkUrl:"https://nashermiles.com/"
+    },
+    {
+      title: "Animigo",
+      description: "Animigo provides natural, cruelty-free pet supplements and care products for dogs and cats.",
+      imgUrl: Animigo,
+      linkUrl:"https://www.animigo.fr/"
+    },
+    {
+      title: "Weightworld",
+      description: "WeightWorld delivers natural, non-GMO wellness supplements from a trusted UK brand established in 2006.",
+      imgUrl: weightworld,
+      linkUrl:"https://www.weightworld.uk/"
+    },
     {
       title: "Slurrpfarm ",
       description: "A food brand offering healthy, organic, and nutritious snacks and meals for kids and families.",
@@ -68,63 +81,6 @@ export const Projects = () => {
     }
   ];
 
-  const projects = [
-    {
-      title: "youtube ",
-      description: "viedo sharing service where users can like and upload their own videos",
-      imgUrl: youtube,
-      linkUrl:"https://youtubeplaylist.ccbp.tech"
-    },
-    {
-      title: "Flipkart",
-      description: "Flipkart helps users for shoping purposes",
-      imgUrl: flipkart,
-      linkUrl:"https://flipkartpage.ccbp.tech"
-    },
-    {
-      title: "zomato",
-      description: "zomato we can order food items from restaurants",
-      imgUrl: zomato,
-      linkUrl:"https://zomatopage.ccbp.tech"
-    },
-    {
-      title: "amazon",
-      description: "amazon we can buy all types of products",
-      imgUrl: amazon,
-      linkUrl:"https://amazonpage.ccbp.tech",
-    },
-    
-    {
-      title: "Guess the Number ",
-      description: "Number guessing game",
-      imgUrl: guessnumber,
-      linkUrl:"https://solvethepuzzle.ccbp.tech",
-    },
-   
-    {
-      title: "Google search",
-      description: "we can search whatever we want in google",
-      imgUrl: google,
-      linkUrl:"https://pagesearch.ccbp.tech"
-    },
-    {
-      title: "Tourism places",
-      description: "we can can search tourist places",
-      imgUrl: tourism,
-      linkUrl:"https://vacationtour.ccbp.tech"
-    },
-    {
-      title: "Booking Flats",
-      description: "booking the flats",
-      imgUrl: flatbook,
-      linkUrl:"https://snapdealbooking.ccbp.tech"
-    }
-    
-    
-    
-
-  ];
-
   return (
     
     <section className="project" id="project">
@@ -133,9 +89,14 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className={isVisible ? "animate__animated animate__fadeIn": "skill"}>
 
-                <h2 style={{ marginBottom: '60px' }}>shopify Projects</h2>
+              <div className="text-center">
+                  <h2 style={{ fontSize: "35px", fontWeight: 700 }}>
+                    <span style={{ color: "#fff" }}>Shopify </span>
+                    <span style={{ color: "#00cfff", textShadow: "0 0 8px #00cfff" }}>Projects</span>
+                  </h2>
+                </div>
 
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">            
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -143,27 +104,6 @@ export const Projects = () => {
                       <Row>
                         {
                           Shopifyprojects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-   
-                <h2 style={{ marginBottom: '60px' }}>Hands-on projects</h2>
-
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">            
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}

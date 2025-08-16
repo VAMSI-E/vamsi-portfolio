@@ -1,0 +1,52 @@
+.category {
+    padding: 25px;
+    border-radius: 12px;
+
+  }
+  
+  .category h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .react-multiple-carousel__arrow::before{
+    font-weight: 700 !important;
+  }
+  
+  
+  .skill-bx {
+    padding: 25px 0 20px;
+  }
+  
+  .skill .skill-bx .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .skill .skill-bx .item .skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .skill .skill-bx h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .container-card.About-me-container{
+    background-position: 30%;
+  }

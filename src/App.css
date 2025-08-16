@@ -74,6 +74,16 @@ input:focus, textarea:focus, select:focus {
 }
 
 @media screen and (max-width: 767px) {
+  .mobile-margins{
+    margin: 1rem 0 -1.5rem;
+  }
+  .statsbar{
+    padding: unset !important;
+  }
+.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right{
+  display: none;
+}
 .navbar-desktop{
   display: none !important;
 }
@@ -95,12 +105,18 @@ input:focus, textarea:focus, select:focus {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
-  font-size: 2.2rem !important;
+  font-size: 1.5rem !important;
+}
+.align-items-center.row {
+  flex-direction: column-reverse;
 }
 }
 
 
 @media screen and (min-width: 768px) {
+  .about-me-section {
+    background-position: bottom;
+  }
   .navbar-mobile{
     display: none !important;
   }
@@ -115,7 +131,7 @@ input:focus, textarea:focus, select:focus {
   }
   .navbar-text button{
     margin-left: 18px;
-    padding: 18px 34px;
+    padding: 12px 25px;
   }
 }
 
@@ -159,7 +175,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 600;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 0 15px;
   font-size: 20px;
   opacity: 0.75;
 }
@@ -206,6 +222,7 @@ span.navbar-text {
 .navbar-text button {
   font-weight: 700;
   color: #fff;
+  border-radius: 8px;
   font-size: 18px;
 	position: relative;
   background-color: #393838;
@@ -281,13 +298,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+.text-justify-center{
+  text-align: justify;
+  margin: 1rem 0;
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 50px 0;
   background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.About-me-container{
+  margin-top: 0;
+  background-image: url('./assets/img/banner-bg.png');
+  object-position: 0;
   background-repeat: no-repeat;
 }
 .banner .tagline {
@@ -333,38 +360,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 /************ Skills Css ************/
-.skill {
-  padding: 0 0 50px 0;
-  position: relative;
-}
 .skill-bx {
-  background: #151515;
   border-radius: 64px;
   text-align: center;
-  margin-top: -60px;
 }
 .skill h2 {
-	font-size: 45px;
+	font-size: 35px;
 	font-weight: 700;
 }
 .skill p {
@@ -397,9 +405,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: black;
 }
 .project h2 {
-	font-size: 35px;
+	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  margin: 1.5rem 0 2rem;
 }
 .project p {
   color: #B8B8B8;
@@ -520,7 +529,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 60px 0 100px 0;
 }
 .contact img {
   width: 92%;
@@ -808,3 +817,83 @@ a {
   border-radius: 5px;
   box-shadow: var(--box-shadow);
 }
+
+.navbar-link {
+  font-weight: 600;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 20px;
+  opacity: 0.75;
+}
+
+.navbar-link .link-text {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+}
+
+.navbar-link .link-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #0dcaf0; /* Sky blue */
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-link:hover .link-text::after,
+.navbar-link.active .link-text::after {
+  width: 100%;
+}
+
+.intro-text {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.name-text {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title-text {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #0dcaf0; 
+  font-weight: 600;
+}
+
+
+
+/* SparkleEffect */
+
+i {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #00ff00;
+  pointer-events: none;
+  animation: animate 2s linear forwards;
+  z-index: 9999;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y));
+  }
+}
+

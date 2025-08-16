@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import headerImg from "../assets/img/vamsi-img-two.jpg";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -52,29 +50,21 @@ export const Banner = () => {
       <Container style={{ marginTop: "-70px" }}>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Vamsi`}</h1>
-                  <h1 className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer"]' height=""><span className="wrap">{text}</span></h1>
-                  <p>I'm a very ambitious Shopify developer looking for a role in an
-                    established IT company with the opportunity to work with the latest
-                    technologies on challenging and diverse projects.I'm quiet confident, naturally curious, and perpetually working on
-                    improving my chops one design problem at a time.</p>
-                  <a href="/vamsi-portfolio#connect">
-                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-                  </a>
-                </div>}
-            </TrackVisibility>
+                <div>
+                  <h3 className="intro-text">Hello, it's me...</h3>
+                  <h2 className="name-text">Vamsi Krishna</h2>
+                  <h3 className="title-text">
+                    and I'm a  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer"]' height=""><span className="wrap highlight">{text}</span></span>
+                  </h3>
+                </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" />
-                </div>}
-            </TrackVisibility>
+            <div className="text-center mobile-margins">
+            <img src={headerImg} alt="Header Img" 
+            className="img-fluid rounded-circle border border-4 border-info shadow"
+            style={{ width: "200px", height: "200px", objectFit: "inherit" }}
+            />
+          </div>
           </Col>
         </Row>
       </Container>
