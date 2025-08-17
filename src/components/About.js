@@ -38,8 +38,8 @@ export const About = () => {
                   </p>
 
                   {/* Buttons Side by Side */}
-                  <div className="d-flex flex-wrap gap-3 mt-3">
-                    <a href="/vamsi-portfolio#connect">
+                  <div className="d-flex flex-wrap gap-3 mt-3 justify-content-around justify-content-md-start">
+                    <a href="#connect">
                       <button
                         className="btn px-3 py-2 text-white"
                         style={{ backgroundColor: '#0dcaf0', fontWeight: '600', border: 'none' }}
