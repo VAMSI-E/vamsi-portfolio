@@ -73,12 +73,65 @@ input:focus, textarea:focus, select:focus {
   width: 100%;
 }
 
+/* Drawer Styles */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -100%; /* start offscreen on the left */
+  width: 250px;
+  height: 100%;
+  background: #111;
+  color: #fff;
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 9999;
+  opacity: 0;
+}
+
+.drawer.open {
+  left: 0;   /* slide into view */
+  opacity: 1;
+}
+
+/* Close button */
+.drawer-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.rem;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  position: absolute;
+  right: 0;
+}
+.drawer .nav-link {
+  color: #fff !important;
+  display: block;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+}
+
+.drawer.open .nav-link {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Active link */
+.drawer .nav-link.active {
+  color: #00cfff !important;
+}
+
+
 @media screen and (max-width: 767px) {
+  .banner#home{
+    padding: 200px 0 50px 0 !important;
+  }
   .mobile-margins{
     margin: 1rem 0 -1.5rem;
   }
   .statsbar{
-    padding: unset !important;
+    margin-top: -4rem;
   }
 .react-multiple-carousel__arrow--left,
 .react-multiple-carousel__arrow--right{

@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/vamsi-img-3.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 import shopifyCV from '../assets/shopify.pdf';
 
 export const About = () => {
@@ -31,9 +30,8 @@ export const About = () => {
 
           {/* Text & Buttons */}
           <Col xs={12} md={7} lg={8}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+          
+                <div>
                   <h3 style={{ fontWeight: "600" }}>Shopify Developer</h3>
                   <p className="text-justify-center">
                     I’m a passionate Shopify developer with hands-on experience in building and customizing eCommerce websites. I enjoy working with real-world web applications and learning new tools. I'm confident, curious, and always aiming to improve my skills. I'm excited to join a team where I can contribute to impactful projects.
@@ -70,8 +68,6 @@ export const About = () => {
                     </a>
                   </div>
                 </div>
-              )}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>

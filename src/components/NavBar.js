@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -20,12 +21,12 @@ export const NavBar = () => {
     };
 
     window.addEventListener("scroll", onScroll);
-
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
+    setDrawerOpen(false); // close drawer when a link is clicked
   };
 
   return (
@@ -42,9 +43,15 @@ export const NavBar = () => {
                 folio
               </span>
             </h1>
-            <Navbar.Toggle aria-controls="basic-navbar-nav">
+
+            {/* Toggle opens drawer */}
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              onClick={() => setDrawerOpen(true)}
+            >
               <span className="navbar-toggler-icon"></span>
             </Navbar.Toggle>
+
             <span className="navbar-text navbar-mobile">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/-vamsi/">
@@ -68,8 +75,10 @@ export const NavBar = () => {
               </HashLink>
             </span>
           </div>
+
+          {/* Desktop Navbar collapse remains same */}
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto d-none d-md-flex">
               <Nav.Link
                 href="#home"
                 className={
@@ -91,9 +100,7 @@ export const NavBar = () => {
               <Nav.Link
                 href="#project"
                 className={
-                  activeLink === "project"
-                    ? "active navbar-link"
-                    : "navbar-link"
+                  activeLink === "project" ? "active navbar-link" : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("project")}
               >
@@ -126,6 +133,36 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      {/* Drawer Popup */}
+      <div className={`drawer ${drawerOpen ? "open" : ""}`}>
+        <button className="drawer-close" onClick={() => setDrawerOpen(false)}>
+          ✕
+        </button>
+        <Nav className="flex-column p-3">
+          <Nav.Link
+            href="#home"
+            className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("home")}
+          >
+            Home
+          </Nav.Link>
+          <Nav.Link
+            href="#skills"
+            className={activeLink === "skills" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("skills")}
+          >
+            Skills
+          </Nav.Link>
+          <Nav.Link
+            href="#project"
+            className={activeLink === "project" ? "active navbar-link" : "navbar-link"}
+            onClick={() => onUpdateActiveLink("project")}
+          >
+            Projects
+          </Nav.Link>
+        </Nav>
+      </div>
     </Router>
   );
 };
